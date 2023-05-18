@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Publisher Test Page</title>
+  </head>
+  <body>
+    <h1>Publisher Test Page</h1>
+    <div id="truly-static-badge"></div>
+    <script>
+    (function () {
+        var script = document.createElement('script');
+
+        script.src = 'https://olvgxx3zbk.execute-api.us-east-2.amazonaws.com/test/api/tlv1?siteId=207888fa-df67-431d-9648-939de201de95';
+        script.async = true;
+
+        var entry = document.getElementsByTagName('script')[0];
+        entry.parentNode.insertBefore(script, entry);
+    })();
+</script>
+
+  </body>
+</html>
